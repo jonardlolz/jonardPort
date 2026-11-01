@@ -8,6 +8,28 @@ const categoryIcons = {
   Tools: Wrench,
 } as const;
 
+const skillEmblems: Record<string, string> = {
+  TypeScript: "TS",
+  JavaScript: "JS",
+  "Next.js": "NX",
+  React: "RE",
+  "Node.js": "ND",
+  Laravel: "LV",
+  PHP: "PHP",
+  PostgreSQL: "PG",
+  MySQL: "MY",
+  Swift: "SW",
+  "SwiftUI": "SU",
+  UIKit: "UI",
+  "Core Data": "CD",
+  "SwiftData": "SD",
+  Git: "GT",
+  Docker: "DK",
+  Vercel: "VC",
+  "REST APIs": "API",
+  "CI/CD": "CI",
+};
+
 export function SkillsSection() {
   return (
     <section id="skills" className="mx-auto max-w-6xl px-6 py-16">
@@ -34,14 +56,20 @@ export function SkillsSection() {
 
               <div className="relative overflow-hidden border-t border-border/70">
                 <div className="marquee-track flex w-max items-center gap-3 px-4 py-4">
-                  {repeatedItems.map((item, index) => (
-                    <div
-                      key={`${category}-${item}-${index}`}
-                      className="shrink-0 rounded-full border border-border bg-background/60 px-3 py-2 text-sm text-foreground shadow-sm"
-                    >
-                      {item}
-                    </div>
-                  ))}
+                  {repeatedItems.map((item, index) => {
+                    const emblem = skillEmblems[item] ?? item.slice(0, 2).toUpperCase();
+
+                    return (
+                      <div
+                        key={`${category}-${item}-${index}`}
+                        title={item}
+                        aria-label={item}
+                        className="flex shrink-0 items-center justify-center rounded-full border border-border bg-background/60 px-2.5 py-2 text-[10px] font-semibold uppercase tracking-[0.18em] text-foreground shadow-sm"
+                      >
+                        {emblem}
+                      </div>
+                    );
+                  })}
                 </div>
               </div>
             </div>
