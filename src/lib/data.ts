@@ -1,12 +1,12 @@
 export const profile = {
-  name: "Your Name",
+  name: "KregJonard",
   role: "Full Stack & iOS Developer",
   tagline:
     "I build web apps and native iOS apps end to end — from the API to the UI.",
   location: "Philippines",
-  email: "you@example.com",
-  github: "https://github.com/your-handle",
-  linkedin: "https://linkedin.com/in/your-handle",
+  email: "craigejonardbaring@example.com",
+  github: "https://github.com/jonardlolz",
+  linkedin: "https://linkedin.com/in/craigejonardbaring",
 };
 
 export type Project = {

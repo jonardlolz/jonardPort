@@ -22,7 +22,7 @@ export function Hero() {
         transition={{ duration: 0.5, delay: 0.1 }}
         className="text-4xl font-bold tracking-tight sm:text-6xl"
       >
-        Hi, I&apos;m {profile.name}.
+        Hi, I'm {profile.name}.
       </motion.h1>
       <motion.p
         initial={{ opacity: 0, y: 12 }}
