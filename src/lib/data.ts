@@ -1,8 +1,8 @@
 export const profile = {
-  name: "KregJonard",
+  name: "Craige Jonard Baring",
   role: "Full Stack & iOS Developer",
   tagline:
-    "I build web apps and native iOS apps end to end — from the API to the UI.",
+    "I build web and mobile applications that are fast, responsive, and user-friendly. I have a passion for creating intuitive user interfaces and seamless user experiences.",
   location: "Philippines",
   email: "craigejonardbaring@example.com",
   github: "https://github.com/jonardlolz",
