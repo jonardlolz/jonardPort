@@ -1,5 +1,5 @@
 export const profile = {
-  name: "Craige Jonard Baring",
+  name: "KregJonard",
   role: "Full Stack & iOS Developer",
   tagline:
     "I build web and mobile applications that are fast, responsive, and user-friendly. I have a passion for creating intuitive user interfaces and seamless user experiences.",
@@ -29,22 +29,6 @@ export const projects: Project[] = [
     tags: ["Next.js", "Laravel", "SwiftUI", "PostgreSQL"],
     platform: "Full Stack",
     featured: true,
-  },
-  {
-    slug: "saas-dashboard",
-    title: "SaaS Dashboard",
-    description:
-      "Auth, database-backed dashboard with real-time updates. Describe the real problem it solves.",
-    tags: ["Next.js", "TypeScript", "PostgreSQL"],
-    platform: "Web",
-  },
-  {
-    slug: "ios-app",
-    title: "Native iOS App",
-    description:
-      "SwiftUI app with persistence and a polished UI. Swap in your real app and screenshots.",
-    tags: ["SwiftUI", "SwiftData"],
-    platform: "iOS",
   },
 ];
 
