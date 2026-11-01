@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { profile } from "@/lib/data";
+import { ThemeToggle } from "@/components/ui/theme-toggle";
 
 const links = [
   { href: "#projects", label: "Projects" },
@@ -16,17 +17,21 @@ export function Header() {
         <Link href="/" className="font-semibold tracking-tight">
           {profile.name}
         </Link>
-        <nav className="flex items-center gap-6 text-sm text-muted-foreground">
-          {links.map((link) => (
-            <a
-              key={link.href}
-              href={link.href}
-              className="transition-colors hover:text-foreground"
-            >
-              {link.label}
-            </a>
-          ))}
-        </nav>
+
+        <div className="flex items-center gap-4">
+          <nav className="flex items-center gap-6 text-sm text-muted-foreground">
+            {links.map((link) => (
+              <a
+                key={link.href}
+                href={link.href}
+                className="transition-colors hover:text-foreground"
+              >
+                {link.label}
+              </a>
+            ))}
+          </nav>
+          <ThemeToggle />
+        </div>
       </div>
     </header>
   );
