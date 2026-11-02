@@ -15,11 +15,11 @@ export function Hero() {
           muted
           loop
           playsInline
-          className="absolute inset-0 h-full w-full object-cover motion-reduce:hidden"
+          className="absolute inset-y-0 left-[450px] h-full w-[calc(100%+50px)] object-cover motion-reduce:hidden"
         >
           <source src="/hero.mp4" type="video/mp4" />
         </video>
-        <div className="absolute inset-0 bg-black/55" />
+        <div className="absolute inset-0 bg-gradient-to-r from-background/80 via-background/100 to-transparent" />
       </div>
       <div className="mx-auto flex w-full max-w-5xl flex-col items-start gap-6">
         <motion.p
@@ -36,7 +36,7 @@ export function Hero() {
           transition={{ duration: 0.5, delay: 0.1 }}
           className="text-4xl font-bold tracking-tight text-white sm:text-6xl"
         >
-          Hi, I&apos;m {profile.name}
+          Hi, I'm {profile.name}
         </motion.h1>
         <motion.p
           initial={{ opacity: 0, y: 12 }}
