@@ -15,11 +15,11 @@ export function Hero() {
           muted
           loop
           playsInline
-          className="absolute inset-y-0 left-[450px] h-full w-[calc(100%+50px)] object-cover motion-reduce:hidden"
+          className="absolute inset-0 h-full w-full object-cover motion-reduce:hidden"
         >
           <source src="/hero.mp4" type="video/mp4" />
         </video>
-        <div className="absolute inset-0 bg-gradient-to-r from-background/60 via-background/100 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-r from-background via-background/90 via-40% to-transparent" />
       </div>
       <div className="mx-auto flex w-full max-w-5xl flex-col items-start gap-6">
         <motion.p
