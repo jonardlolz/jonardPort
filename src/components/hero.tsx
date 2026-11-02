@@ -8,7 +8,7 @@ import { ArrowDown, Mail } from "lucide-react";
 export function Hero() {
   return (
     <section className="relative isolate flex min-h-[70vh] items-center overflow-hidden px-6 py-24 sm:py-32">
-      <div className="absolute inset-0 -z-10 bg-black">
+      <div className="absolute inset-0 -z-10 bg-background">
         <video
           aria-hidden="true"
           autoPlay
@@ -19,14 +19,14 @@ export function Hero() {
         >
           <source src="/hero.mp4" type="video/mp4" />
         </video>
-        <div className="absolute inset-0 bg-gradient-to-r from-background/80 via-background/100 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-r from-background/60 via-background/100 to-transparent" />
       </div>
       <div className="mx-auto flex w-full max-w-5xl flex-col items-start gap-6">
         <motion.p
           initial={{ opacity: 0, y: 8 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.4 }}
-          className="text-sm font-medium text-white/80"
+          className="text-sm font-medium text-muted-foreground"
         >
           {profile.role} · {profile.location}
         </motion.p>
@@ -34,7 +34,7 @@ export function Hero() {
           initial={{ opacity: 0, y: 12 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.1 }}
-          className="text-4xl font-bold tracking-tight text-white sm:text-6xl"
+          className="text-4xl font-bold tracking-tight text-foreground sm:text-6xl"
         >
           Hi, I'm {profile.name}
         </motion.h1>
@@ -42,7 +42,7 @@ export function Hero() {
           initial={{ opacity: 0, y: 12 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className="max-w-xl text-lg text-white/80"
+          className="max-w-xl text-lg text-muted-foreground"
         >
           {profile.tagline}
         </motion.p>
