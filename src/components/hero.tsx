@@ -7,7 +7,7 @@ import { ArrowDown, Mail } from "lucide-react";
 
 export function Hero() {
   return (
-    <section className="relative isolate flex min-h-[70vh] items-center overflow-hidden px-6 py-24 sm:py-32">
+    <section className="relative isolate flex min-h-dvh snap-start items-center overflow-hidden px-6 py-24 sm:py-32">
       <div className="absolute inset-0 -z-10 bg-background">
         <video
           aria-hidden="true"
@@ -36,7 +36,7 @@ export function Hero() {
           transition={{ duration: 0.5, delay: 0.1 }}
           className="text-4xl font-bold tracking-tight text-foreground sm:text-6xl"
         >
-          Hi, I'm {profile.name}
+          Hi, I&apos;m {profile.name}
         </motion.h1>
         <motion.p
           initial={{ opacity: 0, y: 12 }}

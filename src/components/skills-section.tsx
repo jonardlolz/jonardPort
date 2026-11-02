@@ -32,7 +32,7 @@ const skillEmblems: Record<string, string> = {
 
 export function SkillsSection() {
   return (
-    <section id="skills" className="mx-auto max-w-6xl px-6 py-16">
+    <section id="skills" className="mx-auto flex min-h-dvh max-w-6xl snap-start flex-col justify-center px-6 py-16">
       <h2 className="text-left text-2xl font-semibold tracking-tight">Skills</h2>
 
       <div className="mt-8 space-y-5">

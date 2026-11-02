@@ -3,7 +3,7 @@ import { ProjectCard } from "@/components/project-card";
 
 export function ProjectsSection() {
   return (
-    <section id="projects" className="mx-auto max-w-5xl px-6 py-16">
+    <section id="projects" className="mx-auto flex min-h-dvh max-w-5xl snap-start flex-col justify-center px-6 py-16">
       <h2 className="text-left text-2xl font-semibold tracking-tight">Projects</h2>
       <p className="mt-2 text-left text-muted-foreground">
         A mix of full stack and iOS work.
